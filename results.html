@@ -5,25 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=PT+Mono|PT+Sans:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/slicknav.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Results</title>
 </head>
 <body class="gradient-bg">
-    <header class="header">
+    <header class="header" data-aos="fade-down">
         <div class="container d-flex">
             <a href="#" class="logo">
                 <img src="img/logo.png" alt="logo">
             </a>
             <div class="header-nav d-flex">
                 <nav class="main-header-nav">
-                    <a href="#">Email Consulting</a>
-                    <a href="#">Contact Us</a>
+                    <a href="#" class="hvr-pulse-shrink">Email Consulting</a>
+                    <a href="#" class="hvr-pulse-shrink">Contact Us</a>
                 </nav>
                 <nav class="info-header-nav">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Disclaimer</a>
+                    <a href="#" class="hvr-pulse-shrink">Privacy Policy</a>
+                    <a href="#" class="hvr-pulse-shrink">Disclaimer</a>
                 </nav>
             </div>
             <!-- /.header-nav -->
@@ -36,12 +38,12 @@
             <div class="container d-flex">
                 <div class="process-screen-content-results d-flex flex-column">
                     <div class="content-tabs d-flex align-items-center flex-column">
-                        <p class="big-title">98<sup>/100</sup></p>
-                        <h5 class="little-title">MailGenius Score</h5>
-                        <p class="text-main">We’ve found 2 things you can do to avoid landing in the spam folder and increase security.</p>
-                        <form class="form-tabs-content d-flex align-items-center">
+                        <p class="big-title animated fadeInUp delay-0.2s">98<sup>/100</sup></p>
+                        <h5 class="little-title animated fadeInUp delay-0.2s">MailGenius Score</h5>
+                        <p class="text-main animated fadeInUp delay-0.2s">We’ve found 2 things you can do to avoid landing in the spam folder and increase security.</p>
+                        <form class="form-tabs-content d-flex align-items-center animated fadeInUp delay-0.2s">
                             <input type="checkbox" name="fix" id="fix">
-                            <label for="fix" class="box-fix">
+                            <label for="fix" class="box-fix hvr-shadow">
                                 <div class="form-tabs-box tabs-box-fix d-flex align-items-center">
                                     <a href="#"><i class="fas fa-exclamation-triangle font-awesome"></i></a>
                                     <p class="form-tabs-title">2 Things to fix</p>
@@ -49,7 +51,7 @@
                                 <!-- /.form-tabs-box -->
                             </label>
                             <input type="checkbox" name="tests" id="tests">
-                            <label for="tests">
+                            <label for="tests" class="box-fix hvr-shadow">
                                 <div class="form-tabs-box tabs-box-tests d-flex align-items-center">
                                     <a href="#"><i class="fas fa-hand-point-right font-awesome"></i></a>
                                     <p class="form-tabs-title">11 Passing tests</p>
@@ -57,7 +59,7 @@
                                 <!-- /.form-tabs-box -->
                             </label>
                             <input type="checkbox" name="email" id="email">
-                            <label for="email" class="box-fix">
+                            <label for="email" class="box-fix hvr-shadow">
                                 <div class="form-tabs-box tabs-box-email d-flex align-items-center">
                                     <a href="#"><i class="fas fa-envelope font-awesome"></i></a>
                                     <p class="form-tabs-title">Email preview</p>
@@ -65,14 +67,14 @@
                                 <!-- /.form-tabs-box -->
                             </label>
                         </form>
-                            <div class="box-share-results d-flex">
+                            <div class="box-share-results d-flex animated fadeInUp delay-0.2s">
                                     <p class="share-results-text">Sorted by: Important</p>
                                     <p class="share-results-text-share">Share these results: <span>mailgenius.com/spam-test/example-1</span></p>
                             </div>
                             <!-- /.box-share-results -->
                     </div>
                     <!-- content-tabs -->
-                    <div class="box-email-color flex-column">
+                    <div class="box-email-color flex-column animated fadeInUp delay-0.2s">
                         <div class="box-color-content d-flex">
                             <div class="box-color d-flex">
                                 <span class="list-item-num-results">1</span>
@@ -91,8 +93,8 @@
                             <p class="box-info-desq">(-1 points) There is no List-Unsubscribe header.</p>
                             <p class="solution">Solution:</p>
                             <p class="text-main">Using an email tool that allows you to alter email headers, add the List-Unsubscribe header with the appropriate mailto and/or link for receivers to unsubscribe with.</p>
-                            <button class="btn-results btn-text">Learn more about list-unsubscribe header</button>
-                            <button class="btn-results btn-text">Get help fixinf this</button>
+                            <button class="btn-results btn-text hvr-shadow">Learn more about list-unsubscribe header</button>
+                            <button class="btn-results btn-text hvr-shadow">Get help fixinf this</button>
                         </div>
                         <!-- /.box-info -->
                     </div>
@@ -120,8 +122,8 @@
                             <p class="text-main">Existing DNS Records:</p>
                             <p class="text-mono">_dmarc.gmail.com. 60 IN TXT v=DMARC1; p=none; sp=quarantine; rua=mailto:mailauth-reports@google.com</p>
                             <p class="text-main">Note: You can only edit these records when sending from a custom domain.</p>
-                            <button class="btn-results btn-text">Learn more about dmarc</button>
-                            <button class="btn-results btn-text">Get help fixinf this</button>
+                            <button class="btn-results btn-text hvr-shadow">Learn more about dmarc</button>
+                            <button class="btn-results btn-text hvr-shadow">Get help fixinf this</button>
                         </div>
                         <!-- /.box-info -->
                     </div>
@@ -145,22 +147,22 @@
                             <p class="box-info-desq">(-1 points) There is no List-Unsubscribe header.</p>
                             <p class="solution">Solution:</p>
                             <p class="text-main">Using an email tool that allows you to alter email headers, add the List-Unsubscribe header with the appropriate mailto and/or link for receivers to unsubscribe with.</p>
-                            <button class="btn-results btn-text">Learn more about list-unsubscribe header</button>
-                            <button class="btn-results btn-text">Get help fixinf this</button>
+                            <button class="btn-results btn-text hvr-shadow">Learn more about list-unsubscribe header</button>
+                            <button class="btn-results btn-text hvr-shadow">Get help fixinf this</button>
                         </div>
                     <!-- /.box-info -->
                     </div>
                 <!-- /.box-email-color -->
                 </div>
                 <!-- /.process-screen-content -->
-                <div class="process-steps-results">
+                <div class="process-steps-results animated fadeInRight delay-0.2s">
                     <p class="process-steps-title-results">Helpful Links</p>
                     <ul class="process-steps-list-results">
-                        <li class="process-steps-link-results"><a href="#">Live Chat</a></li>
-                        <li class="process-steps-link-results"><a href="#">Partners & Discounts</a></li>
-                        <li class="process-steps-link-results"><a href="#">Free 15 Minute Call</a></li>
+                        <li class="process-steps-link-results"><a href="#" class="hvr-grow">Live Chat</a></li>
+                        <li class="process-steps-link-results"><a href="#" class="hvr-grow">Partners & Discounts</a></li>
+                        <li class="process-steps-link-results"><a href="#" class="hvr-grow">Free 15 Minute Call</a></li>
                     </ul>
-                    <button type="submit" class="btn btn-gradient btn-gradient-results">New email test</button>
+                    <button type="submit" class="btn btn-gradient btn-gradient-results hvr-bounce-in">New email test</button>
                     <a href="#">
                         <img src="../homework-mail-genius/img/neverbounce-little-icon.png" alt="neverbounce-little-icon" class="footer-icon">
                     </a>
@@ -205,6 +207,10 @@ $(function(){
             label: ''
         });
     });
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
 </script>
 </body>
 </html>
