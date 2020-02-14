@@ -888,7 +888,7 @@ padding: 30px 90px 20px 40px;
 .process-steps-results {
     max-width: 250px;
     padding-left: 48px;
-    padding-top: 136px;
+    margin-top: 136px;
     position: static;
     right: 235px;
 }
